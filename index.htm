@@ -6,30 +6,33 @@
             margin:0 auto;
             background: #ededed;
         }
-        #top-panel {
-            height: 60px;
+        .panel {
+            height: 40px;
             width: 100%;
-            background: #d0d0d0;
         }
-            #top-panel svg {
+            .panel svg {
                 float: left;
             }
-            #top-panel span {
-                line-height: 60px;
+            .panel span {
+                line-height: 40px;
             }
-        #nav-grp01 {
-            height: 80px;
-            background: #009aff;
+        .top {
+            background: #d0d0d0;
+        }
+        .select {
+            background: #4582d8;
         }
     </style>
 </head>
 <body>
-    <div id="top-panel">
-        <svg width="60px" height="60px"><circle cx="30" cy="30" r="25" fill="rgba(128, 128, 128, 1.0)" /></svg>
+    <div class="panel top">
+        <svg width="60px" height="40px"><circle cx="40" cy="20" r="18" fill="rgba(128, 128, 128, 1.0)" /></svg>
         <span>Logo Text</span>
     </div>
-    <div id="nav-grp01">
-
+    <div class="panel select">
+        <div class="group-left">
+            <span><a href="#">Новый лист</a></span>
+        </div>
     </div>
 </body>
 </html>
