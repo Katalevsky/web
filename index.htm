@@ -3,37 +3,73 @@
     <title>Главная страница</title>
     <style>
         body {
-            margin:0 auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: #ededed;
+            min-width: 800px;
+            margin: 0 auto;
         }
-        .panel {
+/*===============================================================================================*/
+        div.panel {
             height: 40px;
+            line-height: 40px;
             width: 100%;
         }
-            .panel svg {
-                float: left;
-            }
-            .panel span {
-                line-height: 40px;
-            }
-        .top {
-            background: #d0d0d0;
+        div.delimiter {
+            height: 5px;
+            width: 100%;
         }
-        .select {
+        div.data {
+            height: 100px;
+            width: 100%;
+        }
+        div.buttons {
+            height: 30px;
+            line-height: 30px;
+            width: 100%;
+        }
+            div.buttons a {
+                padding: 0 20px;
+                text-decoration: none;
+                font-size: 14pt;
+            }
+/*===============================================================================================*/
+        .right {
+            float:right;
+        } 
+        .left {
+            float: left;
+        }
+/*===============================================================================================*/
+        .blue {
             background: #4582d8;
         }
+        .blue-buttons {
+            background: #ffffff;
+        }
+            .blue-buttons a {
+                color: #4582d8;
+            }
+                .blue-buttons .select, .blue-buttons a:hover {
+                    background: #4582d8;
+                    color: #ffffff;
+                }
+/*===============================================================================================*/              
     </style>
 </head>
 <body>
-    <div class="panel top">
-        <svg width="60px" height="40px"><circle cx="40" cy="20" r="18" fill="rgba(128, 128, 128, 1.0)" /></svg>
-        <span>Logo Text</span>
+    <div class="panel">
+        <svg class="left" width="60px" height="40px">
+            <circle cx="40" cy="20" r="18" fill="rgba(128, 128, 128, 1.0)" />
+        </svg>
+        Logo Text
     </div>
-    <div class="panel select">
-        <div class="group-left">
-            <span><a href="#">Новый лист</a></span>
-        </div>
+    <div class="delimiter blue"></div>
+    <div class="buttons blue-buttons">
+        <a class="left select">Новый лист</a>
+        <a class="right" href="">Полученные</a>
+        <a class="right" href="">Отправленные</a>
     </div>
+    <div class="data blue"></div>
 </body>
 </html>
 
